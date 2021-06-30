@@ -1,0 +1,221 @@
+.price {
+    padding-top: 50px;
+    background: url('../img/price/price-bg.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.price1 {
+    position: absolute;
+    top: 80px;
+    left: -70px;
+    width: 50px;
+}
+.price2 {
+    position: absolute;
+    right: -130px;
+    top: 360px;
+    width: 200px;
+    img {
+        max-width: 100px;
+    }
+}
+.price-wrap {
+    border-radius: 10px;
+    background-color: rgba(#e2f1f5, .71);
+    padding: 28px 15px;
+}
+.price-info {
+    display: flex;
+}
+.price-info__img {
+    width: 97px;
+}
+.price-info__img img {
+    max-width: 100%;
+}
+.price-info__text {
+    width: calc(100% - 97px);
+}
+.price-info__title {
+    color: #222526;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 35px;
+    padding-top: 10px;
+    span {
+        font-weight: 400;
+    }
+}
+.price-info__descr {
+    margin-left: -97px;
+    text-align: center;
+    opacity: 0.75;
+    color: #222526;
+    font-size: 10px;
+    font-weight: 300;
+}
+.price__woman {
+    img {
+        max-width: 100%;
+    }
+}
+.price-form {
+    margin-top: -20px;
+}
+.price-form input {
+    display: block;
+    height: 58px;
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto;
+    padding: 0 25px;
+    border-radius: 29px;
+    border: 1px solid #c0e0e0;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+}
+.price__btn {
+    height: 61px;
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto;
+}
+.price-form__check {
+    display: flex;
+    width: 270px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 7px;
+    opacity: 0.87;
+    color: #000000;
+    font-size: 8px;
+    font-weight: 300;
+    
+    span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        img {
+            display: none;
+        }
+    }
+    a {
+        margin-left: 4px;
+        color: #000000;
+    }
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        &:checked + span img {
+            display: block;
+        }
+    }
+}
+@media(min-width: 992px) {
+    .price__woman {
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+        display: flex;
+    }
+    .price-wrap {
+        padding: 40px;
+        position: relative;
+    }
+    .price-info__text {
+        max-width: 360px;
+    }
+    .price-info__img {
+        width: auto;
+        margin-right: -50px;
+    }
+    .price-info__title {
+        margin-bottom: 24px;
+        font-size: 23px;
+    }
+    .price-info__descr {
+        margin-left: 0;
+        text-align: left;
+        font-size: 13px;
+    }
+    .price-form {
+        margin-top: 0;
+        input {
+            height: 66px;
+            max-width: 300px;
+            margin-bottom: 34px;
+            margin-left: 15px;
+        }
+    }
+    .price__btn {
+        height: 69px;
+        max-width: 300px;
+        margin-left: 15px;
+    }
+    .price-form__check {
+        margin-left: 15px;
+        width: 300px;
+    }
+}
+@media(min-width: 1200px) {
+    .price {
+        padding-bottom: 50px;
+    }
+    .price-info__text {
+        max-width: 460px;
+    }
+    .price-info__title {
+        font-size: 30px;
+    }
+    .price-info__descr {
+        font-size: 15px;
+    }
+    .price-form {
+        input {
+            height: 66px;
+            max-width: 396px;
+            margin-bottom: 43px;
+            margin-left: 15px;
+            border-radius: 45px;
+        }
+    }
+    .price__btn {
+        height: 91px;
+        max-width: 396px;
+        margin-left: 15px;
+        border-radius: 45px;
+    }
+    .price-form__check {
+        font-size: 11px;
+        span {
+            width: 14px;
+            height: 14px;
+        }
+        input {
+            height: 0;
+        }
+    }
+    .price1 {
+        left: 0;
+    }
+    .price2 {
+        width: 400px;
+        right: 0;
+        z-index: 2;
+        img {
+            max-width: 400%;
+        }
+    }
+} 

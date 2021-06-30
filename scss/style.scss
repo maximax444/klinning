@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+@import "fonts";
+body {
+    font-family: "SF Pro Display"; 
+    font-weight: normal;
+    margin: 0;
+}
+.wrapper {
+    overflow: hidden;
+}
+@import "grid";
+@import "interface";
+@import "header";
+@import "main";
+@import "quiz";
+@import "services";
+@import "price";
+@import "about";
+@import "boss";
+@import "bonus"; 

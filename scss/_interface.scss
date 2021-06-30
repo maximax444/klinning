@@ -1,0 +1,58 @@
+input:focus {
+    outline: none;
+}
+.btn {
+    border-radius: 34px;
+    background: #68ceec url('../img/btn-after2.png') center top no-repeat;
+    font-size: 11px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05px;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.2s;
+    max-width: 396px;
+    border: 0;
+}
+.btn-o {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #68ceec; 
+    height: 41px;
+    color: rgba(#000000, .87);
+    text-decoration: none;
+}
+.section-title {
+    margin: 0;
+    color: #222526;
+    margin-bottom: 22px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-title span {
+    color: #313434;
+    line-height: 9px;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-weight: 400;
+    display: block;
+}
+@media(min-width: 992px) {
+    .section-title {
+        font-size: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .section-title span {
+        font-size: 17px;
+    }
+}

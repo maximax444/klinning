@@ -1,0 +1,159 @@
+.header {
+ padding: 18px 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+}
+.header__wrap {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.mob-menu {
+ width: 19px;
+ height: 15px;
+ position: relative;
+}
+.mob-menu span{
+ height: 3px;
+ display: block;
+ width: 100%;
+ background-color: #000;
+ border-radius: 2px;
+ position: absolute;
+ left: 0;
+ top: 6px;
+}
+.mob-menu span::before {
+ content: "";
+ display: block;
+ height: 3px;
+ width: 100%;
+ background-color: #000;
+ border-radius: 2px;
+ position: absolute;
+ left: 0;
+ top: -6px;
+}
+.mob-menu span::after {
+ content: "";
+ display: block;
+ height: 3px;
+ width: 100%;
+ background-color: #000;
+ border-radius: 2px;
+ position: absolute;
+ left: 0;
+ top: 6px;
+}
+.header-menu {
+ display: none;
+}
+.header__logo {
+ color: #70d3f0;
+ font-size: 14px;
+ font-weight: 500;
+ text-transform: uppercase;
+ max-width: 50px;
+ margin-left: 15px;
+ margin-right: 75px;
+}
+.header-info__phone {
+ font-size: 13px;
+ display: block;
+ margin-bottom: 10px;
+ text-decoration: none;
+ color: #000;
+}
+.header-info__price {
+ padding-left: 4px;
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+ text-decoration: none;
+}
+.header-info__price img {
+ margin-right: 7px;
+ max-width: 11px;
+}
+.header-info__price span {
+ opacity: 0.81;
+ color: #25b1da;
+ font-size: 8px;
+ text-decoration: underline;
+}
+@media(min-width: 370px) {
+ .header__logo {
+  margin-right: 120px;
+ }
+}
+@media(min-width: 576px) {
+ .header__logo {
+  margin-right: 300px;
+ }
+}
+@media(min-width: 768px) {
+ .header__logo {
+  margin-right: 320px;
+  max-width: 200px;
+  font-size: 22px;
+ }
+ .header-info__phone {
+  font-size: 19px;
+ }
+ .header-info__price span {
+  font-size: 12px;
+ }
+}
+@media(min-width: 992px) {
+ .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+ }
+ .mob-menu {
+  position: absolute;
+  left: 185px;
+  top: 50%;
+  margin-top: -7px;
+ }
+ .header__logo {
+  margin-right: 0;
+  margin-left: 0;
+ }
+ .header__wrap {
+  position: relative;
+ }
+}
+@media(min-width: 1200px) {
+ .mob-menu {
+  display: none;
+ }
+ .header-menu {
+  display: block;
+ }
+ .header-menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+ }
+ .header-menu__item {
+  margin: 0 17px;
+  color: #706c70;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s;
+ }
+ .header-menu__item:hover {
+  color: #25b1da;
+  letter-spacing: 0.04px
+ }
+ .header-info__price img {
+  max-width: 20px;
+ }
+}

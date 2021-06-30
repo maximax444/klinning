@@ -1,0 +1,55 @@
+.bonus {
+    background: url('../img/bonus/bonus-bg.jpg') center no-repeat;
+    background-size: 150%;
+    background-position: center right;
+    padding: 70px 0;
+}
+.bonus__title {
+    margin: 0;
+    margin-bottom: 26px;
+    color: #222526;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+}
+.bonus__descr {
+    margin-bottom: 225px;
+    color: #313434;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+@media(min-width: 768px) {
+    .bonus {
+        background-size: 110%;
+    }
+}
+@media(min-width: 992px) {
+    .bonus {
+        background-size: cover;
+    }
+    .bonus__title {
+        margin-bottom: 38px;
+        font-size: 34px;
+        max-width: 515px;
+    }
+    .bonus__descr {
+        margin-bottom: 38px;
+        font-size: 12px;
+        max-width: 375px;
+    }
+}
+@media(min-width: 1200px) {
+    .bonus {
+        background-size: cover;
+    }
+    .bonus__title {
+        margin-bottom: 53px;
+        font-size: 48px;
+        max-width: 715px;
+    }
+    .bonus__descr {
+        margin-bottom: 53px;
+        font-size: 17px;
+        max-width: 525px;
+    }
+}

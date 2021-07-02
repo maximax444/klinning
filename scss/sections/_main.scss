@@ -73,6 +73,21 @@
     left: 60px;
     top: 450px;
 }
+.main-action::before {
+    content :"";
+    width: 144px;
+    height: 144px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    border-radius: 50%;
+    border: 2px solid #b2e7f6;
+    right: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    animation: pulse 7s linear infinite;
+    opacity: 0;
+}
 .main-action::after {
     content :"";
     width: 144px;
@@ -82,7 +97,14 @@
     left: -15px;
     border-radius: 50%;
     border: 2px solid #b2e7f6;
+    right: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    animation: pulse 7s linear infinite;
+    opacity: 0;
+    animation-delay: 4s;
 }
+
 .main-action span {
     font-weight: 500;
 }
@@ -180,9 +202,63 @@
     .main {
         background: url('../img/main/main-bg.jpg') center top no-repeat;
         background-size: cover;
-        padding-top: 145px;
+        padding-top: 165px;
+        padding-bottom: 130px;
+    }
+    .main__title {
+        font-size: 57px;
+        max-width: 465px;
+        margin-bottom: 40px;
+        span {
+            font-size: 116px;
+        }
+    }
+    .main-action {
+        left: 582px;
+        top: 5px;
+        width: 157px;
+        height: 157px;
+        font-size: 14px;
+        padding-top: 62px;
+        padding-left: 37px;
+        padding-right: 31px;
+        &::after, &::before {
+            width: 250px;
+            height: 250px;
+            top: -48px;
+            left: -48px;
+            
+        }
+        &__time {
+            font-size: 10px;
+            width: 42px;
+            height: 42px;
+            top: -10px;
+            left: 12px;
+        }
+    }
+    .main__min {
+        max-width: 475px;
+        font-size: 44px;
+        width: 475px;
+        height: 75px;
+        margin-bottom: 40px;
+        span {
+            background-image: linear-gradient(to bottom, #222526 0%, #545454 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
     .features__block {
         font-size: 13px;
+    }
+    .main__subtitle {
+        background-image: linear-gradient(to bottom, #222526 0%, #545454 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        font-size: 17px;
+        max-width: 385px;
+        line-height: 25.64px;
+        margin-bottom: 80px;
     }
 }

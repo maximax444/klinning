@@ -122,6 +122,9 @@
             display: block;
         }
     }
+    img {
+        max-width: 9px;
+    }
 }
 @media(min-width: 992px) {
     .price__woman {
@@ -167,11 +170,15 @@
     .price-form__check {
         margin-left: 15px;
         width: 300px;
+        img {
+            max-width: 15px;
+        }
     }
 }
 @media(min-width: 1200px) {
     .price {
-        padding-bottom: 50px;
+        padding-bottom: 120px;
+        padding-top: 160px;
     }
     .price-info__text {
         max-width: 460px;
@@ -189,6 +196,7 @@
             margin-bottom: 43px;
             margin-left: 15px;
             border-radius: 45px;
+            font-size: 15px;
         }
     }
     .price__btn {
@@ -196,6 +204,7 @@
         max-width: 396px;
         margin-left: 15px;
         border-radius: 45px;
+        font-size: 15px;
     }
     .price-form__check {
         font-size: 11px;

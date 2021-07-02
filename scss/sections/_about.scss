@@ -31,7 +31,7 @@
     align-items: center;
     margin-bottom: 28px;
 }
-.about-list__img {
+.about-list__img picture {
     background-color: rgba(#e2f1f5, 0.62);
     display: flex;
     justify-content: center;
@@ -81,6 +81,9 @@
             max-width: 1000%;
         }
     }
+    .about-wrap:nth-child(2) .about__img {
+        padding-left: 200px;
+    }
     .about-wrap:nth-child(3) .about__img {
         padding-right: 100px;
     }
@@ -96,6 +99,7 @@
     .about__descr {
         margin-bottom: 20px;
         font-size: 15px;
+        max-width: 456px;
     }
     .about-list__text {
         font-size: 15px;

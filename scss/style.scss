@@ -7,16 +7,19 @@ body {
     font-weight: normal;
     margin: 0;
 }
+button, input {
+    font-family: "SF Pro Display"; 
+}
 .wrapper {
     overflow: hidden;
 }
 @import "grid";
 @import "interface";
 @import "header";
-@import "main";
-@import "quiz";
-@import "services";
-@import "price";
-@import "about";
-@import "boss";
-@import "bonus"; 
+@import "sections/main";
+@import "sections/quiz";
+@import "sections/services"; 
+@import "sections/price";
+@import "sections/about";
+@import "sections/boss";
+@import "sections/bonus"; 

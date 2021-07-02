@@ -1,6 +1,7 @@
 .quiz {
     padding-bottom: 65px;
     padding-top: 15px;
+    position: relative;
 }
 .quiz-info {
     border-radius: 10px;
@@ -169,7 +170,26 @@
 .quiz-next img {
     margin-left: 13px;
 }
+.quiz__decore1 {
+    right: 0;
+    top: -150px;
+}
+.quiz__decore2 {
+    right: 0;
+    top: 600px;
+}
 @media(min-width: 992px) {
+    .quiz__decore1 {
+        right: auto;
+        top: auto;
+        left: 0;
+        bottom: 100px;
+    }
+    .quiz__decore2 {
+        right: 0;
+        top: 70px;
+        z-index: -1;
+    }
     .quiz-wrap {
         display: flex;
         justify-content: space-between;

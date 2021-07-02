@@ -1,5 +1,6 @@
 .about {
     padding-bottom: 40px;
+    position: relative;
 }
 .about__img {
     img {
@@ -52,7 +53,48 @@
     font-weight: 300;
     width: calc(100% - 69px);
 }
+.about__decore1, .about__decore4 {
+    display: none;
+}
+.about__decore2 {
+    left: 0;
+    top: 900px;
+    max-width: 100%;
+}
+.about__decore3 {
+    bottom: 270px;
+    left: 60px;
+    max-width: 100%;
+    img {
+        max-width: 80%;
+    }
+}
 @media(min-width: 992px) {
+    .about__decore1 {
+        display: block;
+        left: -450px;
+        top: 0px;
+        z-index: -1;
+    }
+    .about__decore2 {
+        top: 650px;
+        left: -150px;
+        z-index: -1;
+    }
+    .about__decore3 {
+        left: -120px;
+        bottom: 200px;
+        z-index: -1;
+        img {
+            max-width: 100%;
+        }
+    }
+    .about__decore4 {
+        display: block;
+        right: -250px;
+        bottom: 0px;
+        z-index: -1;
+    }
     .about-wrap {
         display: flex;
         align-items: center;

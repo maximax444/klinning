@@ -60,7 +60,25 @@
     color: #25b1da;
  }
 }
+.services__decore1, .services__decore2 {
+   display: none;
+}
 @media(min-width: 992px) {
+ .services {
+  position: relative;
+ }
+ .services__decore1 {
+  display: block;
+  left: -400px;
+  top: 50px;
+  z-index: -1;
+ }
+ .services__decore2 {
+  display: block;
+  right: -200px;
+  bottom: 0px;
+  z-index: -1;
+ }
  .services-wrap {
   display: flex;
   justify-content: space-between;
